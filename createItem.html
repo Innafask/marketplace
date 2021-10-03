@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+ <script type="text/javascript" src="../../assets/jquery.js"></script>
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+  <script src="../js/createItem.js"></script>
+</head>
+<body>
+
+<p class="statusMsg"></p>
+<form enctype="multipart/form-data" id="fupForm" method="post"  >
+    <div class="form-group">
+        <label for="name">Item Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required />
+    </div>
+    <div class="form-group">
+        <label for="unit">Unit</label>
+        <input type="text" class="form-control" id="unit" name="unit" placeholder="Enter unit" required />
+    </div>
+    <div class="form-group">
+        <label for="price">Price</label>
+        <input type="text" class="form-control" id="price" name="price" placeholder="Enter price" required />
+    </div>
+    <div class="form-group">
+      <label for="file">Image</label>
+        <input type="file" class="form-control" id="file" name="file" placeholder="Enter image" required />
+    </div>
+    <div class="form-group">
+      <label for="category">Category</label>
+        <input type="text" class="form-control" id="category" name="category" placeholder="Enter category" required />
+    </div>
+    <input type="submit" name="submit" class="btn btn-danger submitBtn" value="SAVE"/>
+    <h2><a href = "../php/welcome.php">Back</a></h2>
+</form>
+</body>
+</html>
